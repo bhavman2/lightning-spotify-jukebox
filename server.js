@@ -4,12 +4,7 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-const { client_id, client_secret, redirect_uri } = require('./spotify-variables');
-
-// var client_id = '039d94f58545451c816d363de9cf39d0'; // Your client id
-// var client_secret = '563c0710d18a4aa98eac2bfba27d2e9d'; // Your secret
-// var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
-
+const { client_id, client_secret, redirect_uri, uri, api } = require('./spotify-variables');
 
 var generateRandomString = function (length) {
   var text = '';
@@ -93,7 +88,7 @@ app.get('/callback', function (req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('http://localhost:3000/?' +
+        res.redirect('http://localhost:3000/callback/?' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token

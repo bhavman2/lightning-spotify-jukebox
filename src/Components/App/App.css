@@ -1,0 +1,25 @@
+.App, html {
+  /* text-align: center; */
+  background-color:  #343a40;
+
+  /* background-color: #e8ecef; */
+}
+
+.login-ctn {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-ctn { 
+display: flex;
+width: 500px;
+margin: 0 auto;
+/* margin-top: 50px; */
+}
+
+.table-ctn {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+}

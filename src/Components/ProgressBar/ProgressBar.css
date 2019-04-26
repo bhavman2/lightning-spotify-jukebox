@@ -1,0 +1,25 @@
+.duration {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+	color: rgba(255,255,255,.3);
+}
+
+.progress {
+  display: flex;
+  position: relative;
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  margin: 5px 0;
+}
+
+.progress__bar{
+  background:white;
+  height:4px;
+  width:0;
+  border-radius:20px;
+}
+
+
+  
