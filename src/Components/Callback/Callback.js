@@ -7,7 +7,6 @@ const queryString = require('query-string');
 class Callback extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       loggedIn: false,
       access_token: '',
@@ -28,7 +27,6 @@ class Callback extends Component {
         refresh_token,
         loggedIn: true
       });
-
     } else {
       console.log('No access token present, try logging in again.')
     }
@@ -52,12 +50,8 @@ class Callback extends Component {
           <span className="sr-only">Loading...</span>
         </Spinner>
       </div>
-
     );
   }
-
 }
-
-
 
 export default Callback;

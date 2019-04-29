@@ -14,12 +14,15 @@
   margin: 5px 0;
 }
 
-.progress__bar{
+.progress-bar{
   background:white;
   height:4px;
   width:0;
   border-radius:20px;
 }
+
+
+
 
 
   

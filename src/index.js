@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import App from './Components/App/App';
-import Login from './Components/Login/Login';
+import Login from './Components/App/Login/Login';
 import Callback from './Components/Callback/Callback';
-
-
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
-
 import './index.css';
 
 const routing = (
@@ -22,7 +18,6 @@ const routing = (
     </div>
   </Router>
 )
-
 
 ReactDOM.render(routing, document.getElementById('root'));
 

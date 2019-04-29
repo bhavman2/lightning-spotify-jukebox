@@ -2,10 +2,8 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import './TrackTable.css'
 
-
 function TrackTable(props) {
-  const searchText = props.searchResults.length === 0 ? <tr><td colSpan="2">Start a new search above</td></tr> : undefined
-
+  const searchText = props.searchResults.length === 0 ? <tr><td colSpan="2">Start a new search above...</td></tr> : undefined
   return (
     <Table
       striped

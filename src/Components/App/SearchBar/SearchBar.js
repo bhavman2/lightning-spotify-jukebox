@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
+import './SearchBar.css'
 
 class SearchBar extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class SearchBar extends Component {
 
   search(text) {
     if (text) {
-      this.props.handleSearch(text);
+      this.props.handleSearch(text.trim());
       this.setState({
         searchText: ''
       });
@@ -38,7 +39,9 @@ class SearchBar extends Component {
           aria-describedby="basic-addon2"
         />
         <InputGroup.Append>
-          <Button onClick={this.search.bind(this, this.state.searchText)} variant="outline-secondary">Search</Button>
+          <Button 
+          onClick={this.search.bind(this, this.state.searchText)}
+          variant="outline-secondary">Search</Button>
         </InputGroup.Append>
       </InputGroup>
     );

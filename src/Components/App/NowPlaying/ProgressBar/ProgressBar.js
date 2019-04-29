@@ -14,16 +14,17 @@ function ProgressBar(props) {
   const { duration, currentTime } = props;
   return (
     <div>
-      <div className="duration">
+      <div 
+      className="duration">
         <div>{readableDuration(currentTime)}</div>
         <div>{readableDuration(duration)}</div>
       </div>
-      <div className="progress">
+      <div 
+      className="progress">
         <div
-          className="progress__bar"
+          className="progress-bar"
           style={{ width: `${(currentTime + 0.25) / duration * 100}%` }}
         />
-        {/* <div className="progress__pointer" /> */}
       </div>
     </div>
   );

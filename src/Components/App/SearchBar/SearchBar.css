@@ -1,0 +1,11 @@
+.input-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  display: flex;
+  max-width: 260px;
+  height: 38px;
+  font-size: 15px;
+}

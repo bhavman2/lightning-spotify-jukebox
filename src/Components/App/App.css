@@ -1,8 +1,10 @@
-.App, html {
-  /* text-align: center; */
-  background-color:  #343a40;
 
-  /* background-color: #e8ecef; */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color:  #343a40;
 }
 
 .login-ctn {
@@ -13,7 +15,7 @@
 
 .search-ctn { 
 display: flex;
-width: 500px;
+max-width: 500px;
 margin: 0 auto;
 /* margin-top: 50px; */
 }
